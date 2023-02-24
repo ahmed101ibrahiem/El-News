@@ -1,13 +1,11 @@
-import 'package:api_2/model.dart';
-import 'package:api_2/remote_database.dart';
 import 'package:flutter/material.dart';
+import 'core/inject/servie_locater.dart' as di;
+import 'features/screens/view/main_home.dart';
 
-import 'homePage.dart';
-
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  runApp(const MyApp());
+  await di.init();
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,11 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'News App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
-      home: const MainHomePage(),
+      home:  MainHomePage(),
     );
   }
 }
-
