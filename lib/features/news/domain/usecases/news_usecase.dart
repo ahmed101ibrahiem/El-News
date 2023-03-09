@@ -1,8 +1,9 @@
 
 
 
-import 'package:api_2/features/domain/intities/news.dart';
-import 'package:api_2/features/domain/repository/news_repo.dart';
+
+import '../intities/news.dart';
+import '../repository/news_repo.dart';
 
 class GetNewsUseCase{
   final NewsRepo newsRepo;

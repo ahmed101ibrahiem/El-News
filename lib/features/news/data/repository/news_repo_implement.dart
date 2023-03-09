@@ -1,8 +1,8 @@
-import 'package:api_2/features/data/datasource/remote_datasource.dart';
-import 'package:api_2/features/domain/intities/news.dart';
-import '../../../core/utils/share/internet_connection.dart';
+import '../../../../core/utils/share/internet_connection.dart';
+import '../../domain/intities/news.dart';
 import '../../domain/repository/news_repo.dart';
 import '../datasource/locale_datasource.dart';
+import '../datasource/remote_datasource.dart';
 
 class NewsRepoImplement implements NewsRepo {
   final NewsRemoteData newsRemoteData;
