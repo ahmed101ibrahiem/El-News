@@ -1,8 +1,8 @@
 
-import 'package:api_2/features/data/models/news_model.dart';
 import 'package:dio/dio.dart';
 
-import '../../../core/utils/constant/api_constant.dart';
+import '../../../../core/utils/constant/api_constant.dart';
+import '../models/news_model.dart';
 
 
 abstract class NewsRemoteData{

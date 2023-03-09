@@ -1,6 +1,7 @@
 
 
-import 'package:api_2/features/domain/intities/news.dart';
+
+import '../../domain/intities/news.dart';
 
 class NewsModel extends News{
 
